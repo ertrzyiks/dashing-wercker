@@ -48,7 +48,7 @@ def get_status(project, token)
     }
 end
 
-SCHEDULER.every '10s', :first_in => 0  do
+SCHEDULER.every '30s', :first_in => 0  do
   projects.each do |p|
     status = get_status(p, ENV['WERCKER_AUTH_TOKEN'])
     send_event(p[:widget_id], status)
