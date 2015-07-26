@@ -14,28 +14,28 @@ Version with multiple builds on single widget can be found here: https://github.
 
 ## Setup
 
-1. `git clone git@github.com:ertrzyiks/dashing-wercker-list.git`
+1. `git clone git@github.com:ertrzyiks/dashing-wercker.git`
 2. Copy Wercker logo to your assets
 
   ```
   mkdir -p dashing/assets/images
-  cp dashing-wercker-list/assets/images/wercker_logo_shield_black.png dashing/assets/images
+  cp dashing-wercker/assets/images/wercker_logo_shield_black.png dashing/assets/images
   ```
 3. Copy `Wercker` widget into your dashing project widgets
 
   ```
-  mkdir -p dashing/widgets/wercker_list
-  cp -R dashing-wercker-list/widgets/wercker_list dashing/widgets/wercker_list
+  mkdir -p dashing/widgets/wercker
+  cp -R dashing-wercker-list/widgets/wercker dashing/widgets/wercker
   ```
 4. Add `wercker.rb` job to dashing jobs
 
   ```
-  cp dashing-wercker-list/jobs/wercker.rb dashing/jobs
+  cp dashing-wercker/jobs/wercker.rb dashing/jobs
   ```
 
 ## Config
 
-There is config array on the top of jobs/wercker_list.rb:
+There is config array on the top of jobs/wercker.rb:
 
 ```
 projects = [
