@@ -1,0 +1,26 @@
+@import "wercker_status";
+
+.widget-wercker {
+  @extend %wercker-status;
+
+  .background {
+    width: 100% !important;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    opacity: 0.05;
+  }
+
+  .label.message {
+    font-size: 70%;
+    margin-top: 1em;
+  }
+  .label.status-or-result {
+    margin-top: 1em;
+  }
+
+  .label.status,
+  .label.result {
+    text-transform: uppercase;
+  }
+}

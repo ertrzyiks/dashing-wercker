@@ -1,0 +1,20 @@
+<img class="background" src="/assets/wercker_logo_shield_black.png">
+
+<h3 class="label application">
+    <span data-bind="project.application"></span>
+
+    <i class="icon icon-check-sign build-icon--passed"></i>
+    <i class="icon icon-ban-circle build-icon--failed"></i>
+    <i class="icon icon-question build-icon--unknown"></i>
+    <i class="icon icon-warning-sign build-icon--aborted"></i>
+    <i class="icon icon-refresh build-icon--running"></i>
+</h3>
+<h5 class="label branch" data-bind="project.branch"></h5>
+
+<p class="label message" data-bind="build.message"></p>
+
+<h1 class="label status-or-result">
+    <span class="label result" data-bind="build.result"></span>
+    <span class="label status" data-bind="build.status"></span>
+</h1>
+
